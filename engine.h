@@ -13,6 +13,7 @@ void* Engine_NewEngine();
 // Methods
 void Engine_Load(void* ptr, char* url);
 void Engine_ClearComponentCache(void* ptr);
+void* Engine_GetFirstRootObject(void* ptr);
 
 #ifdef __cplusplus
 }

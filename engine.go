@@ -53,3 +53,8 @@ func (engine Engine) ClearComponentCache() {
 
 	C.Engine_ClearComponentCache(engine.ptr)
 }
+
+func (engine Engine) GetFirstRootObject() QObject {
+	ptr := C.Engine_GetFirstRootObject(engine.ptr)
+	return QObject{ptr: ptr}
+}

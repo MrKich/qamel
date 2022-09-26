@@ -3,6 +3,7 @@
 #include <QString>
 #include <QUrl>
 
+
 void* Engine_NewEngine() {
     return new QQmlApplicationEngine();
 }
@@ -15,4 +16,9 @@ void Engine_Load(void* ptr, char* url) {
 void Engine_ClearComponentCache(void* ptr) {
     QQmlApplicationEngine *engine = static_cast<QQmlApplicationEngine*>(ptr);
     engine->clearComponentCache();
+}
+
+void* Engine_GetFirstRootObject(void* ptr) {
+    QQmlApplicationEngine *engine = static_cast<QQmlApplicationEngine*>(ptr);
+    return engine->rootObjects()[0];
 }
