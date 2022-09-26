@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/go-qamel/qamel/internal/config"
+	"github.com/MrKich/qamel/internal/config"
 )
 
 // copyWindowsPlugins copies Windows plugins to output directory

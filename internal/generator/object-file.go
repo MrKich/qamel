@@ -355,7 +355,7 @@ func createGoFile(obj object) error {
 	result += "" +
 		"import (\n" +
 		`"unsafe"` + "\n" +
-		`"github.com/go-qamel/qamel"` + "\n" +
+		`"github.com/MrKich/qamel"` + "\n" +
 		")\n"
 
 	// Write function for C constructor

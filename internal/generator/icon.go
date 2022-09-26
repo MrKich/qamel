@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	fp "path/filepath"
 
-	"github.com/go-qamel/qamel/internal/config"
+	"github.com/MrKich/qamel/internal/config"
 )
 
 // ErrNoIcon is error that fired when app icon doesn't exist

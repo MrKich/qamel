@@ -11,12 +11,12 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/go-qamel/qamel/internal/config"
+	"github.com/MrKich/qamel/internal/config"
 )
 
 var (
 	qamelImportName = "qamel"
-	qamelImportPath = "github.com/go-qamel/qamel"
+	qamelImportPath = "github.com/MrKich/qamel"
 	qamelObjectName = "QmlObject"
 
 	rxNumber = regexp.MustCompile(`\d`)
